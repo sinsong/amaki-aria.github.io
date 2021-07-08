@@ -5,6 +5,24 @@
 
 - [小说站](https://amaki.kiyume.top/novel/)
 
+## literal's modify
+
+寻找行首空格情况
+```bash
+find content/ -name '*.md' | xargs grep --color=always '　'
+```
+
+sed 试试:
+```bash
+sed -Ei s/^　+//g
+find content/ -name '*.md' | xargs sed -Ei s/^　+//g
+```
+
+寻找文中空格:
+```regex
+\S　\S
+```
+
 ## 排版规范
 
 举个例子
