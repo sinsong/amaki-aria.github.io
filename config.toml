@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://sinsong.github.io/amaki-aria.github.io/"
 RelativeURLs=true
 defaultContentLanguage = "zh"
 languageCode = "zh-cn"
